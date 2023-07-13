@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# TODO: other drivers
+insmod /lib/modules/xm_usb.ko
