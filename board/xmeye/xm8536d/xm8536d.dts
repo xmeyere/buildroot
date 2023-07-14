@@ -1,0 +1,25 @@
+/dts-v1/;
+/ {
+    #address-cells = <1>;
+    #size-cells = <1>;
+    model = "xm580";  
+    compatible = "xmeye,8536d";
+    cpus {
+        cpu@0 {
+            compatible = "arm,cortex-a9";
+        };
+        cpu@1 {
+            compatible = "arm,cortex-a9";
+        };
+    };
+
+    serial0@10030000 {
+        compatible = "arm,pl011";
+        reg = <0x10030000 0x1000>;
+    };
+
+    memory {
+        device_type = "memory";
+        reg = <0x80000000 0x10000000>;
+    };
+};
